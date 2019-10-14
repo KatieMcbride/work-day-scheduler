@@ -1,0 +1,50 @@
+.header{
+    background-color: whitesmoke;
+    padding: 20px;
+
+}
+.header-space{
+    background-color: yellow;
+    padding: 20px;
+
+}
+
+.header-words{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+
+}
+
+.calendar-container{
+        display: grid inline-grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 50px 300px;
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    
+}
+
+.row-striped:nth-of-type(odd){
+    background-color: #efefef;
+  }
+/* .calendar-container{
+    display: grid;
+    grid-template-areas: "times" "information" "checkbox";
+    grid-template-rows: repeat(24,1fr);
+    grid-template-columns: 120px;
+    grid-auto-rows: 60px;
+    width: 95vw;
+    height: 95vw;
+    margin: auto;
+    border: 2px black;
+    box-shadow: 0 2px 20px;
+} */
+
+.times{
+    grid-area: times;
+    display: grid;
+    font-size: 14px;
+    border: 2px black;
+}
