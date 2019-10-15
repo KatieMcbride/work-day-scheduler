@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    // var currentDate = new Date()
+    // $("#txtDate").datepicker().datepicker("setDate", new Date());
+    
+    
 
     // $("#save").click(function(){
     //     var textOne = document.getElementById("rowInfo1").value;
