@@ -1,15 +1,18 @@
 $(document).ready(function(){
-    // var currentDate = new Date()
-    // $("#txtDate").datepicker().datepicker("setDate", new Date());
-    
-    
+    updateClock();
 
-    // $("#save").click(function(){
-    //     var textOne = document.getElementById("rowInfo1").value;
-    //     console.log(textOne);
-    //     localStorage.setItem("rowInfo1", textOne);
-        
-    // });
+    function updateClock() {
+    var currentdate = new Date(); 
+    var datetime = "Today's Date: " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+        $('#txtDate').text(`${datetime}`);
+    }
+    setInterval(updateClock, 1000);
+
 
     $( "input" ).click(function() {
         var value = $( this ).val();
@@ -17,12 +20,6 @@ $(document).ready(function(){
         localStorage.setItem("rowInfo1", value);
   });
   
-
-
-    // $("#")
-    // value = $("#rowInfo1").val();
-    // console.log(value);
-
 
 
 
