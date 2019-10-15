@@ -14,10 +14,13 @@ $(document).ready(function(){
     setInterval(updateClock, 1000);
 
 
-    $( "input" ).click(function() {
-        var value = $( this ).val();
-        console.log(value);
-        localStorage.setItem("rowInfo1", value);
+    $( ".save" ).click(function() {
+        var id = $(this).data("attribute");
+        var idString = "#" + id;
+        var idValue = $(idString);
+        var saveValue = idValue.val()
+        console.log(saveValue);
+        localStorage.setItem("rowInfo1",saveValue);
   });
   
 
