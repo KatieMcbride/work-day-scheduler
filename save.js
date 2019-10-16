@@ -7,7 +7,7 @@ $(document).ready(function(){
     var saveValue = idValue.val();
     var time = $(this).parent().attr("id");
     console.log(time);
-    localStorage.setItem(time,saveValue);
+    localStorage.setItem("6AM",saveValue);
 });
 
 $( "#save2" ).click(function() {
@@ -17,7 +17,7 @@ var idValue = $(idString);
 var saveValue = idValue.val();
 var time = $(this).parent().attr("id");
 console.log(time);
-localStorage.setItem(time,saveValue);
+localStorage.setItem("7AM",saveValue);
 });
 
 $( "#save3" ).click(function() {
@@ -27,7 +27,7 @@ $( "#save3" ).click(function() {
     var saveValue = idValue.val();
     var time = $(this).parent().attr("id");
     console.log(time);
-    localStorage.setItem(time,saveValue);
+    localStorage.setItem("8AM",saveValue);
 });
 
 $( "#save4" ).click(function() {

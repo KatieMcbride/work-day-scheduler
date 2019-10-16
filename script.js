@@ -13,7 +13,23 @@ $(document).ready(function(){
         $('#txtDate').text(`${datetime}`);
     }
     setInterval(updateClock, 1000);
+    
+    renderLastRegistered();
 
+    function renderLastRegistered() {
+    $("#saveInput1").val(localStorage.getItem("6AM"));
+    $("#saveInput2").val(localStorage.getItem("7AM"));
+    $("#saveInput3").val(localStorage.getItem("8AM"));
+    $("#saveInput4").val(localStorage.getItem("9AM"));
+    $("#saveInput5").val(localStorage.getItem("10AM"));
+    $("#saveInput6").val(localStorage.getItem("11AM"));
+    $("#saveInput7").val(localStorage.getItem("12PM"));
+    $("#saveInput8").val(localStorage.getItem("1PM"));
+    $("#saveInput9").val(localStorage.getItem("2PM"));
+    $("#saveInput10").val(localStorage.getItem("3PM"));
+    $("#saveInput11").val(localStorage.getItem("4PM"));
+    $("#saveInput12").val(localStorage.getItem("5PM"));
+    };
 
     $( "#save1" ).click(function() {
         var id = $(this).data("attribute");
@@ -21,124 +37,13 @@ $(document).ready(function(){
         var idValue = $(idString);
         var saveValue = idValue.val();
         var time = $(this).parent().attr("id");
-        console.log(time);
-        localStorage.setItem(time,saveValue);
-    });
-
-  $( "#save2" ).click(function() {
-    var id = $(this).data("attribute");
-    var idString = "#" + id;
-    var idValue = $(idString);
-    var saveValue = idValue.val();
-    var time = $(this).parent().attr("id");
-    console.log(time);
-    localStorage.setItem(time,saveValue);
-    });
-
-    $( "#save3" ).click(function() {
-        var id = $(this).data("attribute");
-        var idString = "#" + id;
-        var idValue = $(idString);
-        var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
-        console.log(time);
-        localStorage.setItem(time,saveValue);
-    });
-    
-    $( "#save4" ).click(function() {
-        var id = $(this).data("attribute");
-        var idString = "#" + id;
-        var idValue = $(idString);
-        var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
-        console.log(time);
-        localStorage.setItem(time,saveValue);
+        localStorage.setItem("6AM",saveValue);
+        $("#saveInput1").val(localStorage.getItem("6AM"));
     });
     
 
-    $( "#save5" ).click(function() {
-        var id = $(this).data("attribute");
-        var idString = "#" + id;
-        var idValue = $(idString);
-        var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
-        console.log(time);
-        localStorage.setItem(time,saveValue);
-    });
-    
-    $( "#save6" ).click(function() {
-        var id = $(this).data("attribute");
-        var idString = "#" + id;
-        var idValue = $(idString);
-        var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
-        console.log(time);
-        localStorage.setItem(time,saveValue);
-    });
-    
-    $( "#save7" ).click(function() {
-        var id = $(this).data("attribute");
-        var idString = "#" + id;
-        var idValue = $(idString);
-        var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
-        console.log(time);
-        localStorage.setItem(time,saveValue);
-    });
-    
-    $( "#save8" ).click(function() {
-        var id = $(this).data("attribute");
-        var idString = "#" + id;
-        var idValue = $(idString);
-        var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
-        console.log(time);
-        localStorage.setItem(time,saveValue);
-    });
     
 
-    $( "#save9" ).click(function() {
-        var id = $(this).data("attribute");
-        var idString = "#" + id;
-        var idValue = $(idString);
-        var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
-        console.log(time);
-        localStorage.setItem(time,saveValue);
-    });
-    
-
-    $( "#save10" ).click(function() {
-        var id = $(this).data("attribute");
-        var idString = "#" + id;
-        var idValue = $(idString);
-        var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
-        console.log(time);
-        localStorage.setItem(time,saveValue);
-    });
-    
-
-    $( "#save11" ).click(function() {
-        var id = $(this).data("attribute");
-        var idString = "#" + id;
-        var idValue = $(idString);
-        var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
-        console.log(time);
-        localStorage.setItem(time,saveValue);
-    });
-    
-    $( "#save12" ).click(function() {
-        var id = $(this).data("attribute");
-        var idString = "#" + id;
-        var idValue = $(idString);
-        var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
-        console.log(time);
-        localStorage.setItem(time,saveValue);
-    });
-    
   
 
 
