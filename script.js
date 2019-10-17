@@ -1,7 +1,6 @@
 $(document).ready(function(){
     updateClock();
 
-
     function updateClock() {
     var currentdate = new Date(); 
     var datetime = "Today's Date: " + currentdate.getDate() + "/"
@@ -11,6 +10,7 @@ $(document).ready(function(){
                 + currentdate.getMinutes() + ":" 
                 + currentdate.getSeconds();
         $('#txtDate').text(`${datetime}`);
+        console.log(currentdate.getHours());
     }
     setInterval(updateClock, 1000);
     
@@ -31,15 +31,42 @@ $(document).ready(function(){
     $("#saveInput12").val(localStorage.getItem("5PM"));
     };
 
-    $( "#save1" ).click(function() {
-        var id = $(this).data("attribute");
-        var idString = "#" + id;
-        var idValue = $(idString);
-        var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
-        localStorage.setItem("6AM",saveValue);
-        $("#saveInput1").val(localStorage.getItem("6AM"));
-    });
+   
+    // Next figure out the colors
+    function getStylesheet() {
+        var currentTime = new Date().getHours();
+        if (14 <= currentTime&&currentTime < 15) {
+          // If time is after 7PM or before 6AM, apply night theme to ‘body’
+        document.getElementById("sixAM").className = "future";
+        }
+        // if (5 <= currentTime&&currentTime < 11) {
+        //  document.write("<link rel='stylesheet' href='morning.css' type='text/css'>");
+        // }
+        // if (11 <= currentTime&&currentTime < 16) {
+        //  document.write("<link rel='stylesheet' href='day.css' type='text/css'>");
+        // }
+  }
+
+//   if (n > 19 || n < 6)
+//   // If time is after 7PM or before 6AM, apply night theme to ‘body’
+//   document.body.className = "night";
+// else if (n > 16 && n < 19)
+//   // If time is between 4PM – 7PM sunset theme to ‘body’
+//   document.body.className = "sunset";
+// else
+//   // Else use ‘day’ theme
+//   document.body.className = "day";
+  
+  getStylesheet();
+
+
+    // responsive time to change the colors
+
+    // Update CSS
+
+    // DRY code
+
+    
     
 
     
