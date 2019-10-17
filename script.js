@@ -35,9 +35,9 @@ $(document).ready(function(){
     // Next figure out the colors
     function getStylesheet() {
         var currentTime = new Date().getHours();
-        if (14 <= currentTime&&currentTime < 15) {
+        if (18 <= currentTime&&currentTime < 19) {
           // If time is after 7PM or before 6AM, apply night theme to ‘body’
-        document.getElementById("sixAM").className = "future";
+        document.getElementById("sixAM").className = "row future";
         }
         // if (5 <= currentTime&&currentTime < 11) {
         //  document.write("<link rel='stylesheet' href='morning.css' type='text/css'>");
@@ -45,7 +45,7 @@ $(document).ready(function(){
         // if (11 <= currentTime&&currentTime < 16) {
         //  document.write("<link rel='stylesheet' href='day.css' type='text/css'>");
         // }
-  }
+  };
 
 //   if (n > 19 || n < 6)
 //   // If time is after 7PM or before 6AM, apply night theme to ‘body’

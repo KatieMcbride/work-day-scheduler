@@ -31,9 +31,6 @@
     font-size: 25px;
 }
 
-.row-striped:nth-of-type(odd){
-    background-color: #efefef;
-  }
 /* .calendar-container{
     display: grid;
     grid-template-areas: "times" "information" "checkbox";
@@ -55,7 +52,11 @@
 }
 
 .row{
-    background-color: whitesmoke;
+    background-color: white;
+}
+
+.info{
+    background-color: green;
 }
 
 .past{
@@ -68,9 +69,5 @@
 
 .future{
     background-color: green;
-    display: grid inline-grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 50px 300px;
-    grid-gap: 10px;
-    padding: 10px;
+   
 }
