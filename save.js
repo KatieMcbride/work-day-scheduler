@@ -1,24 +1,22 @@
 $(document).ready(function(){
 
-    $( "#save1" ).click(function() {
+    $( "#6A" ).click(function() {
         var id = $(this).data("attribute");
         var idString = "#" + id;
         var idValue = $(idString);
         var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
         localStorage.setItem("6AM",saveValue);
     });
 
-    $( "#save2" ).click(function() {
+    $( "#7A" ).click(function() {
         var id = $(this).data("attribute");
         var idString = "#" + id;
         var idValue = $(idString);
         var saveValue = idValue.val();
-        var time = $(this).parent().attr("id");
         localStorage.setItem("7AM",saveValue);
     });
 
-    $( "#save3" ).click(function() {
+    $( "#8A" ).click(function() {
         var id = $(this).data("attribute");
         var idString = "#" + id;
         var idValue = $(idString);
@@ -27,7 +25,7 @@ $(document).ready(function(){
         localStorage.setItem("8AM",saveValue);
     });
 
-$( "#save4" ).click(function() {
+$( "#9A" ).click(function() {
     var id = $(this).data("attribute");
     var idString = "#" + id;
     var idValue = $(idString);
@@ -38,7 +36,7 @@ $( "#save4" ).click(function() {
 });
 
 
-$( "#save5" ).click(function() {
+$( "#10A" ).click(function() {
     var id = $(this).data("attribute");
     var idString = "#" + id;
     var idValue = $(idString);
@@ -48,7 +46,7 @@ $( "#save5" ).click(function() {
     localStorage.setItem("10AM",saveValue);
 });
 
-$( "#save6" ).click(function() {
+$( "#11A" ).click(function() {
     var id = $(this).data("attribute");
     var idString = "#" + id;
     var idValue = $(idString);
@@ -58,7 +56,7 @@ $( "#save6" ).click(function() {
     localStorage.setItem("11AM",saveValue);
 });
 
-$( "#save7" ).click(function() {
+$( "#12P" ).click(function() {
     var id = $(this).data("attribute");
     var idString = "#" + id;
     var idValue = $(idString);
@@ -68,7 +66,7 @@ $( "#save7" ).click(function() {
     localStorage.setItem("12PM",saveValue);
 });
 
-$( "#save8" ).click(function() {
+$( "#13P" ).click(function() {
     var id = $(this).data("attribute");
     var idString = "#" + id;
     var idValue = $(idString);
@@ -79,7 +77,7 @@ $( "#save8" ).click(function() {
 });
 
 
-$( "#save9" ).click(function() {
+$( "#14P" ).click(function() {
     var id = $(this).data("attribute");
     var idString = "#" + id;
     var idValue = $(idString);
@@ -90,7 +88,7 @@ $( "#save9" ).click(function() {
 });
 
 
-$( "#save10" ).click(function() {
+$( "#15P" ).click(function() {
     var id = $(this).data("attribute");
     var idString = "#" + id;
     var idValue = $(idString);
@@ -101,7 +99,7 @@ $( "#save10" ).click(function() {
 });
 
 
-$( "#save11" ).click(function() {
+$( "#16P" ).click(function() {
     var id = $(this).data("attribute");
     var idString = "#" + id;
     var idValue = $(idString);
@@ -111,7 +109,7 @@ $( "#save11" ).click(function() {
     localStorage.setItem("4PM",saveValue);
 });
 
-$( "#save12" ).click(function() {
+$( "#17P" ).click(function() {
     var id = $(this).data("attribute");
     var idString = "#" + id;
     var idValue = $(idString);

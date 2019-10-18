@@ -1,18 +1,47 @@
 $(document).ready(function(){
-    updateClock();
+    // updateClock();
 
-    function updateClock() {
-    var currentdate = new Date(); 
-    var datetime = "Today's Date: " + currentdate.getDate() + "/"
-                + (currentdate.getMonth()+1)  + "/" 
-                + currentdate.getFullYear() + " @ "  
-                + currentdate.getHours() + ":"  
-                + currentdate.getMinutes() + ":" 
-                + currentdate.getSeconds();
-        $('#txtDate').text(`${datetime}`);
-        console.log(currentdate.getHours());
-    }
-    setInterval(updateClock, 1000);
+    // function updateClock() {
+    // var currentdate = new Date(); 
+    // var datetime = "Today's Date: " + currentdate.getDate() + "/"
+    //             + (currentdate.getMonth()+1)  + "/" 
+    //             + currentdate.getFullYear() + " @ "  
+    //             + currentdate.getHours() + ":"  
+    //             + currentdate.getMinutes() + ":" 
+    //             + currentdate.getSeconds();
+    //     $('#txtDate').text(`${datetime}`);
+    //     console.log(currentdate.getHours());
+    // }
+    // setInterval(updateClock, 1000);
+
+    function checkTime() {
+        let currentDate = moment().format('MMM Do YYYY');
+          $('#txtDate').text(`Today is: ${currentDate}`);
+        let currentTime = moment().format('h:mm a');
+        $('#current-time').text(`It is: ${currentTime}`);
+        let currentHour = moment().hours();
+        console.log(currentHour);
+          let inputTime = $('input');
+          
+          for (i=0; i < inputTime.length; i++) {
+            let idTime = inputTime[i].id 
+            idTime = parseInt(idTime.slice(0, -1));
+            console.log('id tags', inputTime[i].id);
+            console.log('idTime', idTime);
+            if (currentHour > idTime) {
+              $(`#${inputTime[i].id}`).attr('style', 'background-color:blue');
+            } else if (currentHour < idTime) {
+              $(`#${inputTime[i].id}`).attr('style', 'background-color:red');
+            } else if (currentHour === idTime) {
+              $(`#${inputTime[i].id}`).attr('style', 'background-color:green');
+            }
+          };
+        };
+  
+    
+
+    checkTime();
+    
     
     renderLastRegistered();
 
@@ -31,21 +60,34 @@ $(document).ready(function(){
     $("#saveInput12").val(localStorage.getItem("5PM"));
     };
 
+});
+
    
     // Next figure out the colors
-    function getStylesheet() {
-        var currentTime = new Date().getHours();
-        if (18 <= currentTime&&currentTime < 19) {
-          // If time is after 7PM or before 6AM, apply night theme to ‘body’
-        document.getElementById("sixAM").className = "row future";
-        }
-        // if (5 <= currentTime&&currentTime < 11) {
-        //  document.write("<link rel='stylesheet' href='morning.css' type='text/css'>");
-        // }
-        // if (11 <= currentTime&&currentTime < 16) {
-        //  document.write("<link rel='stylesheet' href='day.css' type='text/css'>");
-        // }
-  };
+//     function getStylesheet() {
+//         var currentTime = new Date().getHours();
+//         if (0 <= currentTime&&currentTime < 5) {
+//           // If time is after 7PM or before 6AM, apply night theme to ‘body’
+//         document.getElementById("sixAM").className = "row future";
+//         document.getElementById("sevenAM").className = "row future";
+//         document.getElementById("eightAM").className = "row future";
+//         document.getElementById("nineAM").className = "row future";
+//         document.getElementById("tenAM").className = "row future";
+//         document.getElementById("elevenAM").className = "row future";
+//         document.getElementById("twelvePM").className = "row future";
+//         document.getElementById("onePM").className = "row future";
+//         document.getElementById("twoPM").className = "row future";
+//         document.getElementById("threePM").className = "row future";
+//         document.getElementById("fourPM").className = "row future";
+//         document.getElementById("fivePM").className = "row future";
+//         }
+//         if (5 <= currentTime&&currentTime < 11) {
+//          document.write("<link rel='stylesheet' href='morning.css' type='text/css'>");
+//         }
+//         if (11 <= currentTime&&currentTime < 16) {
+//          document.write("<link rel='stylesheet' href='day.css' type='text/css'>");
+//         }
+//   };
 
 //   if (n > 19 || n < 6)
 //   // If time is after 7PM or before 6AM, apply night theme to ‘body’
@@ -57,7 +99,7 @@ $(document).ready(function(){
 //   // Else use ‘day’ theme
 //   document.body.className = "day";
   
-  getStylesheet();
+//   getStylesheet();
 
 
     // responsive time to change the colors
@@ -96,4 +138,3 @@ $(document).ready(function(){
 
 
 
-});
