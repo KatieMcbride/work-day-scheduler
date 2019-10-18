@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
  
 
 </head>
@@ -24,7 +25,7 @@
 
     <div class = "header-space"> </div>
 
-    <div class="container" id="calendar">
+    <div class="container font" id="calendar">
         <div class="row">
             <div class="col-sm-3">
                 <p>Times</p>
@@ -39,8 +40,8 @@
         
         <form >
             <div class="row" id="sixAM" >
-                <div class="col-sm-3 border p-4" >6 AM</div>
-                <div class="col-6 border p-4 info" id="rowInfo1">
+                <div class="col-sm-3 border p-4 times" >6 AM</div>
+                <div class="col-6 border p-4" id="rowInfo1">
                     <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput1" ></textarea>
                 </div>
                 <div class="col-3 border p-4" id="6AM">
@@ -50,7 +51,7 @@
         </form>
         <form>
             <div class="row" id="sevenAM">
-                <div class="col-sm-3 border p-4">7 AM</div>
+                <div class="col-sm-3 border p-4 times">7 AM</div>
                 <div class="col-6 border p-4" id="rowInfo2">
                         <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput2" ></textarea>
                 </div>
@@ -61,7 +62,7 @@
         </form>
        <form>
             <div class="row" id="eightAM">
-                <div class="col-sm-3 border p-4">8 AM</div>
+                <div class="col-sm-3 border p-4 times">8 AM</div>
                 <div class="col-6 border p-4" id="rowInfo3">
                     <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput3"></textarea>
                 </div>
@@ -72,7 +73,7 @@
         </form>
        <form>
             <div class="row" id="nineAM">
-                <div class="col-sm-3 border p-4">9 AM</div>
+                <div class="col-sm-3 border p-4 times">9 AM</div>
                 <div class="col-6 border p-4" id="rowInfo4">
                     <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput4"></textarea>
                 </div>
@@ -83,89 +84,89 @@
         </form>
        <form>
             <div class="row" id="tenAM">
-                <div class="col-sm-3 border p-4">10 AM</div>
+                <div class="col-sm-3 border p-4 times">10 AM</div>
                 <div class="col-6 border p-4" id="rowInfo5">
                     <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput5"></textarea>
                 </div>
                 <div class="col-3 border p-4" id="10AM">
-                    <input type="button"   id="10A" value="Save" data-attribute = "saveInput5">
+                    <input type="button"  class ="save" id="10A" value="Save" data-attribute = "saveInput5">
                 </div>
              </div>
         </form>
        <form>
             <div class="row" id="elevenAM">
-                <div class="col-sm-3 border p-4">11 AM</div>
+                <div class="col-sm-3 border p-4 times">11 AM</div>
                 <div class="col-6 border p-4" id="rowInfo6">
                     <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput6"></textarea>
                 </div>
                 <div class="col-3 border p-4" id="11AM">
-                    <input type="button"  id="11A" value="Save" data-attribute = "saveInput6">
+                    <input type="button" class ="save" id="11A" value="Save" data-attribute = "saveInput6">
                 </div>
              </div>
         </form>
         <form>
             <div class="row" id="twelvePM">
-                <div class="col-sm-3 border p-4">12 PM</div>
+                <div class="col-sm-3 border p-4 times">12 PM</div>
                 <div class="col-6 border p-4" id="rowInfo7">
                     <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput7"></textarea>
                 </div>
                 <div class="col-3 border p-4" id="12PM">
-                    <input type="button" id="12P"  value="Save" data-attribute = "saveInput7">
+                    <input type="button"  class ="save" id="12P"  value="Save" data-attribute = "saveInput7">
                 </div>
              </div>
         </form>
         <form>
             <div class="row" id="onePM">
-                <div class="col-sm-3 border p-4">1 PM</div>
+                <div class="col-sm-3 border p-4 times">1 PM</div>
                 <div class="col-6 border p-4" id="rowInfo8">
                     <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput8"></textarea>
                 </div>
                 <div class="col-3 border p-4" id="1PM">
-                    <input type="button" id ="13P"  value="Save"data-attribute = "saveInput8">
+                    <input type="button" class ="save" id ="13P"  value="Save"data-attribute = "saveInput8">
                 </div>
              </div>
         </form>
         <form>
             <div class="row" id="twoPM">
-                <div class="col-sm-3 border p-4">2 PM</div>
+                <div class="col-sm-3 border p-4 times">2 PM</div>
                 <div class="col-6 border p-4" id="rowInfo9">
                     <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput9"></textarea>
                 </div>
                 <div class="col-3 border p-4" id="2PM">
-                    <input type="button" id ="14P"  value="Save" data-attribute = "saveInput9">
+                    <input type="button" class ="save" id ="14P"  value="Save" data-attribute = "saveInput9">
                 </div>
              </div>
         </form>
         <form>
             <div class="row" id="threePM">
-                <div class="col-sm-3 border p-4">3 PM</div>
+                <div class="col-sm-3 border p-4 times">3 PM</div>
                 <div class="col-6 border p-4" id="rowInfo10">
                     <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput10"></textarea>
                 </div>
                 <div class="col-3 border p-4" id="3PM">
-                    <input type="button" id ="15P"  value="Save" data-attribute = "saveInput10">
+                    <input type="button" class ="save" id ="15P"  value="Save" data-attribute = "saveInput10">
                 </div>
              </div>
         </form>
         <form>
             <div class="row" id="fourPM">
-                <div class="col-sm-3 border p-4">4 PM</div>
+                <div class="col-sm-3 border p-4 times">4 PM</div>
                 <div class="col-6 border p-4" id="rowInfo11">
                     <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput11"></textarea>
                 </div>
                 <div class="col-3 border p-4" id="4PM">
-                    <input type="button" id ="16P"  value="Save" data-attribute = "saveInput11">
+                    <input type="button" class ="save" id ="16P"  value="Save" data-attribute = "saveInput11">
                 </div>
              </div>
         </form>
         <form>
             <div class="row" id="fivePM">
-                <div class="col-sm-3 border p-4">5 PM</div>
+                <div class="col-sm-3 border p-4 times">5 PM</div>
                 <div class="col-6 border p-4" id="rowInfo12">
                     <textarea type="text" class="form-control" placeholder="Things to do" id="saveInput12"></textarea>
                 </div>
                 <div class="col-3 border p-4" id="5PM">
-                    <input type="button" id ="17P"  value="Save" data-attribute = "saveInput12">
+                    <input type="button" class ="save" id ="17P"  value="Save" data-attribute = "saveInput12">
                 </div>
              </div>
         </form>

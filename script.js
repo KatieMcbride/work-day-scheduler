@@ -1,18 +1,4 @@
 $(document).ready(function(){
-    // updateClock();
-
-    // function updateClock() {
-    // var currentdate = new Date(); 
-    // var datetime = "Today's Date: " + currentdate.getDate() + "/"
-    //             + (currentdate.getMonth()+1)  + "/" 
-    //             + currentdate.getFullYear() + " @ "  
-    //             + currentdate.getHours() + ":"  
-    //             + currentdate.getMinutes() + ":" 
-    //             + currentdate.getSeconds();
-    //     $('#txtDate').text(`${datetime}`);
-    //     console.log(currentdate.getHours());
-    // }
-    // setInterval(updateClock, 1000);
 
     function checkTime() {
         let currentDate = moment().format('MMM Do YYYY');
@@ -29,11 +15,11 @@ $(document).ready(function(){
             console.log('id tags', inputTime[i].id);
             console.log('idTime', idTime);
             if (currentHour > idTime) {
-              $(`#${inputTime[i].id}`).attr('style', 'background-color:blue');
+              $(`#${inputTime[i].id}`).attr('style', 'background-color:silver');
             } else if (currentHour < idTime) {
-              $(`#${inputTime[i].id}`).attr('style', 'background-color:red');
+              $(`#${inputTime[i].id}`).attr('style', 'background-color: coral');
             } else if (currentHour === idTime) {
-              $(`#${inputTime[i].id}`).attr('style', 'background-color:green');
+              $(`#${inputTime[i].id}`).attr('style', 'background-color: RosyBrown');
             }
           };
         };
