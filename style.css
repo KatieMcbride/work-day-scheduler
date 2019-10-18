@@ -12,19 +12,18 @@
 .header-words{
     text-align: center;
     color: black;
-    font-size: 40px;
+    font-size: 50px;
 
 }
 
 .calendar-container{
-        display: grid inline-grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: 50px 300px;
-        grid-gap: 10px;
-        background-color: #2196F3;
-        padding: 10px;
-        font-family: 'Lato', sans-serif;
-    
+    display: grid inline-grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 50px 300px;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
 }
 
 .date{
@@ -33,23 +32,10 @@
     font-family: 'Lato', sans-serif;
 }
 
-/* .calendar-container{
-    display: grid;
-    grid-template-areas: "times" "information" "checkbox";
-    grid-template-rows: repeat(24,1fr);
-    grid-template-columns: 120px;
-    grid-auto-rows: 60px;
-    width: 95vw;
-    height: 95vw;
-    margin: auto;
-    border: 2px black;
-    box-shadow: 0 2px 20px;
-} */
 
 .times{
     font-size: 25px;
     font-family: 'Lato', sans-serif;
-
 }
 
 .row{
@@ -59,6 +45,7 @@
 .info{
     background-color: white;
 }
+
 .save{
     border: none;
     color: white;
