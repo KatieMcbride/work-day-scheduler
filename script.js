@@ -10,6 +10,7 @@ $(document).ready(function(){
     let currentHour = moment().hours();
     console.log(currentHour);
     let inputTime = $('input');
+
           
     for (i=0; i < inputTime.length; i++) {
       let idTime = inputTime[i].id 
